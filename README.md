@@ -1,7 +1,7 @@
 # 📚 ManhwaFlow
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/VOTRE_NOM_UTILISATEUR/ManhwaFlow/main/assets/ManhwaFlow.ico" alt="ManhwaFlow" width="150"/>
+  <img src="https://raw.githubusercontent.com/VOTRE_NOM_UTILISATEUR/ManhwaFlow/main/assets/ManhwaFlow.png" alt="ManhwaFlow" width="150"/>
 </p>
 
 <h1 align="center">L'assistant ultime pour votre bibliothèque de manhwas</h1>
