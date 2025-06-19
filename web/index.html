@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManhwaFlow - Convertisseur CBZ & PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo-section">
+                <div class="logo-icon">📚</div>
+                <div class="logo-text">
+                    <h1>ManhwaFlow</h1>
+                    <p>Convertisseur CBZ & Fusionneur PDF</p>
+                </div>
+            </div>
+            <div class="status-indicator" id="statusIndicator">
+                <div class="status-dot"></div>
+                <span id="statusText">Prêt</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="control-panel" id="controlPanel">
+                <div class="panel-content">
+                    <h2>Automatisation de votre bibliothèque</h2>
+                    <p class="panel-description">
+                        Convertissez des CBZ ou fusionnez des chapitres PDF en un seul clic.
+                    </p>
+                    
+                    <div class="action-buttons-container">
+                        <button class="main-action-btn" id="convertCbzBtn">
+                            <span class="btn-icon">⚡</span>
+                            <span class="btn-text">Convertir des CBZ</span>
+                        </button>
+                        <button class="main-action-btn" id="combinePdfsBtn">
+                            <span class="btn-icon">🔗</span>
+                            <span class="btn-text">Fusionner des PDF</span>
+                        </button>
+                    </div>
+
+                    <div class="settings-panel">
+                        <div class="setting-grid">
+                            <div class="setting-item">
+                                <label for="suffixInput">Suffixe de fichier (Watermark) :</label>
+                                <input type="text" id="suffixInput" placeholder="Ex: @KaydopKingmanhwa">
+                            </div>
+                            <div class="setting-item">
+                                <label for="qualitySelect">Qualité (CBZ vers PDF) :</label>
+                                <select id="qualitySelect">
+                                    <option value="95">Haute Qualité (Gros Fichier)</option>
+                                    <option value="85" selected>Équilibré (Recommandé)</option>
+                                    <option value="75">Économie d'Espace</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="setting-item-checkbox">
+                            <input type="checkbox" id="deleteOriginalsCheckbox" checked>
+                            <label for="deleteOriginalsCheckbox">Supprimer les fichiers originaux après traitement</label>
+                        </div>
+                    </div>
+                    
+                    <div class="global-progress" id="globalProgress" style="display: none;">
+                        <div class="progress-info">
+                            <span id="globalProgressText">Traitement en cours...</span>
+                            <span id="globalProgressCount">0/0</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="globalProgressFill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-log" id="activityLog" style="display: none;">
+                <div class="log-header">
+                    <h3>Journal d'Activité</h3>
+                    <button class="log-btn" id="clearLogBtn">Effacer</button>
+                </div>
+                <div class="log-content" id="logContent"></div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>© 2025 ManhwaFlow - Créé pour les passionnés</p>
+        </footer>
+    </div>
+    
+    <template id="log-entry-template">
+        <div class="log-entry">
+            <div class="log-entry-header">
+                <span class="log-file-name">Nom du fichier</span>
+                <span class="log-status waiting">En attente</span>
+            </div>
+            <div class="log-details"></div>
+            <div class="log-progress">
+                <div class="log-progress-fill"></div>
+            </div>
+            <div class="log-actions"></div>
+        </div>
+    </template>
+
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
