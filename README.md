@@ -18,7 +18,7 @@
 <br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/VOTRE_NOM_UTILISATEUR/ManhwaFlow/main/assets/demo.gif" alt="Démonstration de ManhwaFlow en action" width="700"/>
+  <img src="https://raw.githubusercontent.com/cherfdev/ManhwaFlow1/main/assets/demo.gif" alt="Démonstration de ManhwaFlow en action" width="700"/>
 </p>
 
 ---
@@ -41,7 +41,7 @@
 
 La manière la plus simple d'utiliser ManhwaFlow est de télécharger la dernière version exécutable.
 
-1.  Rendez-vous sur la [**page des Releases**](https://github.com/VOTRE_NOM_UTILISATEUR/ManhwaFlow/releases).
+1.  Rendez-vous sur la [**page des Releases**](https://github.com/cherfdev/ManhwaFlow/releases).
 2.  Dans la section "Assets" de la dernière version, téléchargez `ManhwaFlow.exe`.
 3.  Exécutez le fichier. Aucune installation n'est nécessaire !
 
